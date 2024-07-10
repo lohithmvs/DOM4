@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a1=document.createElement("form");
+        var a=document.createElement("input");
+        a.type="radio";
+        a.id="pani Puri";
+        a.name="puri";
+        var c=document.createElement("label");
+        c.innerText="pani Puri";
+        c.for="pani Puri";
+        var d=document.createElement("input");
+        d.type="radio";
+        d.id="bhel Puri";
+        d.name="puri";
+        var e=document.createElement("label");
+        e.innerText="bhel Puri";
+        e.for="bhel Puri";
+        var b=document.createElement("img");
+        a.addEventListener('click',function(){
+            b.setAttribute("src","https://www.shutterstock.com/image-photo/panipuri-fuchka-fhuchka-gupchup-golgappa-260nw-2230877431.jpg");
+            document.body.appendChild(b);
+        })
+        d.addEventListener('click',function(){
+            b.setAttribute("src","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj3fb1raHsOqjESFwLP_P5wVEGg5gi1Cb6dg&s");
+            document.body.appendChild(b);
+        })
+        a1.append(a,c,d,e);
+        document.body.append(a1);
+    </script>
+</body>
+</html>
